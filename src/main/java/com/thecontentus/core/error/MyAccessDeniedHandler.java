@@ -1,4 +1,4 @@
-package com.mkyong.error;
+package com.thecontentus.core.error;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

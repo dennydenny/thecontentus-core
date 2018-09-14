@@ -1,7 +1,8 @@
-package com.mkyong.controller;
+package com.thecontentus.core.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class DefaultController {
@@ -35,6 +36,17 @@ public class DefaultController {
     public String login() {
         return "/login";
     }
+
+    @GetMapping("/register")
+    public String register() {
+        return "/register";
+    }
+
+    /*@PostMapping("/register")
+    public void register() {
+
+    }
+    */
 
     @GetMapping("/403")
     public String error403() {
